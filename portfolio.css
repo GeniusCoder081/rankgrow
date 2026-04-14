@@ -1,0 +1,139 @@
+/* ====================== PORTFOLIO PAGE CSS ====================== */
+body {
+    background: #0a0f1c;
+    color: #cbd5e1;
+}
+/* ====================== PORTFOLIO PAGE ====================== */
+
+/* Hero Section */
+.portfolio-hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1a2538 100%);
+    padding: 160px 0 110px;
+    text-align: center;
+}
+
+.portfolio-hero h1 {
+    font-size: 3.4rem;
+    font-weight: 800;
+    color: white;
+    line-height: 1.1;
+}
+
+.section-subtitle {
+    color: #94a3b8;
+    font-size: 1.28rem;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+/* Filter Buttons */
+.filter-btn {
+    padding: 12px 28px;
+    margin: 8px 6px;
+    border: 2px solid #f97316;
+    background: transparent;
+    color: white;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #f97316;
+    color: #111827;
+    border-color: #f97316;
+}
+
+/* Portfolio Cards */
+.portfolio-card {
+    background: #1a2538;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 25px 50px rgba(249, 115, 22, 0.3);
+}
+
+/* Image Wrapper - Top part clearly visible */
+.portfolio-img-wrapper {
+    height: 260px;
+    overflow: hidden;
+}
+
+.portfolio-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;   /* Yeh line important hai - upar ka part dikhega */
+    transition: transform 0.6s ease;
+}
+
+.portfolio-card:hover .portfolio-img-wrapper img {
+    transform: scale(1.08);
+}
+
+/* Card Content */
+.portfolio-info {
+    padding: 26px 22px 28px;
+}
+
+.portfolio-info h5 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-size: 1.28rem;
+}
+
+.portfolio-info p {
+    color: #94a3b8;
+    font-size: 0.98rem;
+    line-height: 1.65;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.btn-view {
+    background: #f97316;
+    color: #111827;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.btn-view:hover {
+    background: #ea580c;
+    transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .portfolio-hero h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-hero {
+        padding: 130px 0 90px;
+    }
+    
+    .portfolio-hero h1 {
+        font-size: 2.4rem;
+    }
+    
+    .portfolio-img-wrapper {
+        height: 220px;
+    }
+}

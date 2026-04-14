@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - RankGrow Digital</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background: #0a0f1c;
+            color: #cbd5e1;
+        }
+
+        .navbar {
+            background: rgba(10, 15, 28, 0.98) !important;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Hero Section */
+        .about-hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/random/1920x1080/?team,office') center/cover no-repeat;
+            padding: 180px 0 120px;
+            text-align: center;
+            position: relative;
+        }
+
+        .about-hero h1 {
+            font-size: 3.8rem;
+            font-weight: 800;
+            color: white;
+            line-height: 1.1;
+        }
+
+        .about-hero p {
+            font-size: 1.35rem;
+            color: #f1f5f9;
+            max-width: 800px;
+            margin: 20px auto 0;
+        }
+
+        /* Story Section */
+        .story-section {
+            padding: 110px 0;
+            background: #111827;
+        }
+
+        .story-content {
+            background: #1a2538;
+            padding: 50px;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+        }
+
+        /* Values */
+        .values-section {
+            padding: 100px 0;
+            background: #0a0f1c;
+        }
+
+        .value-box {
+            background: #1a2538;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.4s ease;
+            height: 100%;
+        }
+
+        .value-box:hover {
+            transform: translateY(-15px);
+            background: #242f45;
+        }
+
+        .value-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        /* Mission */
+        .mission-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #1a2538, #0f172a);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold fs-3" href="/index.html">
+                    RankGrow <span class="text-orange">Digital</span>
+                </a>
+
+                <!-- Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center text-center">
+
+                        <li class="nav-item"><a class="nav-link " href="/index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/aboutus.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+
+                        <!-- CTA Button -->
+                        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                            <a href="#" class="btn btn-warning text-dark fw-bold px-4 py-2">Get Quote</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+    <!-- Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <h1 data-aos="fade-up">We Don't Just Build Websites,<br>We Build Businesses</h1>
+            <p class="mt-4" data-aos="fade-up" data-aos-delay="100">
+                A Meerut-based digital agency passionate about helping local businesses succeed in the online world.
+            </p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="story-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="story-content">
+                        <h2 class="mb-4">Our Story</h2>
+                        <p class="lead">
+                            RankGrow Digital started with a simple belief — every local business deserves a strong online presence.
+                        </p>
+                        <p>
+                            We saw many hardworking shop owners, doctors, schools, and gyms in Meerut struggling because they didn't have a proper website or weren't visible on Google. 
+                            So we decided to create a solution that is affordable, fast, and result-oriented.
+                        </p>
+                        <p>
+                            Today, we have proudly helped 50+ local businesses grow their customer base through beautiful websites, Google Map listing, and smart SEO strategies.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="/images/about.jpeg" 
+                         alt="Our Team" class="img-fluid rounded-4 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="values-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 data-aos="fade-up">What Makes Us Different</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="value-box">
+                        <div class="value-icon">🚀</div>
+                        <h5>Result Oriented</h5>
+                        <p>We don't just deliver websites. We deliver growth — more calls, more customers, more revenue.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="value-box">
+                        <div class="value-icon">📍</div>
+                        <h5>Local Experts</h5>
+                        <p>We understand Meerut market deeply and know exactly how to rank your business locally on Google.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="value-box">
+                        <div class="value-icon">🤝</div>
+                        <h5>Honest Partnership</h5>
+                        <p>We treat every client like a long-term partner. Transparency and support is our priority.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="mission-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center" data-aos="fade-up">
+                    <h2 class="mb-4">Our Mission</h2>
+                    <p class="lead">
+                        To empower every small and medium business in Meerut and surrounding areas with a powerful digital presence 
+                        so they can compete with anyone and grow without limits.
+                    </p>
+                    <div class="mt-5">
+                        <a href="contact.html" class="btn btn-warning btn-lg px-5 py-3 aboutbtn">Start Your Growth Journey</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <h4 class="footer-logo">RankGrow <span class="text-orange">Digital</span></h4>
+                    <p class="footer-desc mt-3">
+                        We help local businesses in Meerut grow online with modern websites, 
+                        Google Maps optimization and Local SEO.
+                    </p>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.instagram.com/ritik_prajapati2002/" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ritik-kumar-76117b25b/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/GeniusCoder081" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://www.youtube.com/@Geniusbhaivlogger" target="_blank"><i class="bi bi-youtube"></i></a>
+                        <a href="https://wa.me/918057556449" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-5">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="footer-heading">Our Services</h5>
+                    <ul class="footer-links">
+                        <li>Website Development</li>
+                        <li>Google Map Listing</li>
+                        <li>Local SEO</li>
+                        <li>Google Ads</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="footer-heading">Contact Us</h5>
+                    <ul class="footer-contact">
+                        <li><i class="bi bi-telephone-fill"></i> +91 80575 56449</li>
+                        <li><i class="bi bi-envelope-fill"></i> ritikprajapati081@gmail.com</li>
+                        <li><i class="bi bi-geo-alt-fill"></i> Meerut, Uttar Pradesh</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center mt-5">
+                <p>&copy; 2026 RankGrow <span class="text-orange">Digital</span>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true });
+    </script>
+</body>
+</html>

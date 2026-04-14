@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - RankGrow Digital</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background: #0a0f1c;
+            color: #cbd5e1;
+        }
+
+        .navbar {
+            background: rgba(10, 15, 28, 0.98) !important;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Hero */
+        .contact-hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1a2538 100%);
+            padding: 160px 0 100px;
+            text-align: center;
+        }
+
+        .contact-hero h1 {
+            font-size: 3.4rem;
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        .contact-hero p {
+            font-size: 1.3rem;
+            color: #94a3b8;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        /* Main Contact Area */
+        .contact-section {
+            padding: 100px 0;
+            background: #0a0f1c;
+        }
+
+        .contact-card {
+            background: #1a2538;
+            border-radius: 20px;
+            padding: 45px;
+            height: 100%;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .contact-info h4 {
+            color: #f97316;
+            margin-bottom: 30px;
+        }
+
+        .info-item {
+            display: flex;
+            gap: 18px;
+            margin-bottom: 30px;
+        }
+
+        .info-item i {
+            font-size: 30px;
+            color: #f97316;
+            min-width: 50px;
+        }
+
+        .info-item h6 {
+            color: white;
+            margin-bottom: 6px;
+        }
+
+        /* Form */
+        .contact-form-box {
+            background: #1a2538;
+            border-radius: 20px;
+            padding: 45px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .contact-form-box h4 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .form-control {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            padding: 14px 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .form-control:focus {
+            background: rgba(255,255,255,0.12);
+            border-color: #f97316;
+            box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.25);
+            color: white;
+        }
+
+        .form-control::placeholder {
+            color: #94a3b8;
+        }
+
+        .submit-btn {
+            background: #f97316;
+            color: #111827;
+            border: none;
+            padding: 16px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border-radius: 50px;
+            width: 100%;
+            transition: all 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #ea580c;
+            transform: translateY(-4px);
+        }
+
+        /* Footer */
+        .footer-section {
+            background: #0a0f1c;
+            color: #cbd5e1;
+            padding: 80px 0 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                RankGrow <span class="text-orange">Digital</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-3">
+                        <a href="#" class="btn btn-warning text-dark fw-bold px-4">Get Quote</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 data-aos="fade-up">Let's Grow Your Business Together</h1>
+            <p class="mt-3" data-aos="fade-up" data-aos-delay="100">
+                Have a project in mind? Want more customers from Google? <br>
+                We're just one message away.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+   <!-- ====================== CONTACT SECTION ====================== -->
+<!-- ====================== CONTACT SECTION ====================== -->
+<section class="contact-section py-5">
+    <div class="container">
+        <div class="row g-5 align-items-stretch">
+
+            <!-- Left Side - Contact Info -->
+            <div class="col-lg-5" data-aos="fade-right">
+                <div class="contact-info-card">
+                    <h2>Let's Grow Your Business</h2>
+                    <p class="lead mb-5">
+                        Ready to get more customers from Google?<br>
+                        Tell us about your business and we'll help you.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <div>
+                                <h5>Call Us</h5>
+                                <a href="tel:+918057556449">+91 80575 56449</a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <div>
+                                <h5>Email Us</h5>
+                                <a href="mailto:ritikprajapati081@gmail.com">ritikprajapati081@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="bi bi-whatsapp"></i>
+                            <div>
+                                <h5>WhatsApp (Fast Reply)</h5>
+                                <a href="https://wa.me/918057556449" target="_blank">Chat on WhatsApp</a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <div>
+                                <h5>Our Office</h5>
+                                <p class="text-white">Meerut, Uttar Pradesh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Form -->
+            <div class="col-lg-7" data-aos="fade-left">
+                <div class="contact-form-card">
+                    <h3>Send Your Message</h3>
+                    <p class="text-muted mb-4">Our team will reply within 24 hours.</p>
+
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Full Name *" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Business Email *" required>
+                            </div>
+                        </div>
+
+                        <input type="tel" class="form-control mt-3" placeholder="Phone Number *" required>
+
+                        <textarea class="form-control mt-3" rows="5" 
+                            placeholder="Tell us about your business and requirements (Website, SEO, Google Maps, Ads, etc.)" required></textarea>
+
+                        <button type="submit" class="submit-btn mt-4">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <h4 class="footer-logo">RankGrow <span class="text-orange">Digital</span></h4>
+                    <p class="footer-desc mt-3">
+                        We help local businesses in Meerut grow online with modern websites, 
+                        Google Maps optimization and Local SEO.
+                    </p>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.instagram.com/ritik_prajapati2002/" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ritik-kumar-76117b25b/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/GeniusCoder081" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://www.youtube.com/@Geniusbhaivlogger" target="_blank"><i class="bi bi-youtube"></i></a>
+                        <a href="https://wa.me/918057556449" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-5">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="/aboutus.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="footer-heading">Our Services</h5>
+                    <ul class="footer-links">
+                        <li>Website Development</li>
+                        <li>Google Map Listing</li>
+                        <li>Local SEO</li>
+                        <li>Google Ads</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="footer-heading">Contact Us</h5>
+                    <ul class="footer-contact">
+                        <li><i class="bi bi-telephone-fill"></i> +91 80575 56449</li>
+                        <li><i class="bi bi-envelope-fill"></i> ritikprajapati081@gmail.com</li>
+                        <li><i class="bi bi-geo-alt-fill"></i> Meerut, Uttar Pradesh</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center mt-5">
+                <p>&copy; 2026 RankGrow <span class="text-orange">Digital</span>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({ once: true });
+
+    // Smooth Success Popup
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        // Create smooth popup
+        const popup = document.createElement("div");
+        popup.className = "success-popup";
+        popup.innerHTML = `
+            <div class="popup-content">
+                <div class="popup-icon">✅</div>
+                <h2>Message Sent Successfully!</h2>
+                <p>Thank you! Our team will contact you within 24 hours.</p>
+                <button class="popup-close-btn">Close</button>
+            </div>
+        `;
+
+        document.body.appendChild(popup);
+
+        // Trigger animation after adding to DOM
+        setTimeout(() => {
+            popup.classList.add("show");
+        }, 10);
+
+        // Close button functionality
+        popup.querySelector(".popup-close-btn").addEventListener("click", () => {
+            popup.classList.remove("show");
+            setTimeout(() => {
+                popup.remove();
+            }, 400); // Wait for animation to finish
+        });
+
+        // Optional: Click outside to close
+        popup.addEventListener("click", function(e) {
+            if (e.target === popup) {
+                popup.classList.remove("show");
+                setTimeout(() => popup.remove(), 400);
+            }
+        });
+
+        // Reset form
+        this.reset();
+    });
+</script>
+</body>
+</html>
