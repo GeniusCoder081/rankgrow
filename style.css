@@ -33,7 +33,7 @@ body {
 }
 /* ====================== NAVBAR ====================== */
 .navbar {
-    background: rgba(17, 24, 39, 0.98) !important;
+    background: rgba(10, 15, 28, 0.98) !important;
     backdrop-filter: blur(12px);
     padding: 15px 0;
 }
