@@ -43,6 +43,78 @@
     }
 }
  
+/* ====================== NAVBAR FIX ====================== */
+.navbar {
+    padding: 12px 0;
+}
+
+.navbar .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* ====================== HERO SECTION FIX ====================== */
+.hero-full {
+    min-height: 85vh;
+    padding-top: 85px;           /* Fixed navbar ke liye */
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, #0a0f1c 0%, #1a2538 100%);
+    z-index: 1;
+}
+
+.hero-full::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('https://source.unsplash.com/random/1920x1080/?digital,marketing') center/cover no-repeat;
+    opacity: 0.15;
+    z-index: 2;
+}
+
+.hero-full > .container {
+    z-index: 3;
+    position: relative;
+}
+
+.hero-heading {
+    font-size: 3.1rem;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.hero-subtext {
+    font-size: 1.28rem;
+    color: #cbd5e1;
+}
+
+/* Mobile Fixes */
+@media (max-width: 768px) {
+    .hero-full {
+        min-height: 82vh;
+        padding-top: 75px;
+    }
+    
+    .hero-heading {
+        font-size: 2.2rem;
+    }
+    
+    .hero-btns .btn {
+        display: block;
+        width: 100%;
+        max-width: 320px;
+        margin: 10px auto;
+    }
+    
+    .navbar-brand {
+        font-size: 1.6rem;
+    }
+}
 /* ====================== HERO SECTION ====================== */
 .hero-full {
     min-height: 85vh;
@@ -327,9 +399,11 @@ background-color: #ea580c !important;
 }
 
 /* ====================== TRUST / WHY US SECTION ====================== */
+/* ====================== TRUST / WHY US SECTION ====================== */
 .trust-section {
     padding: 110px 0;
     background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
+    overflow: hidden;                    /* Yeh line important hai */
 }
 
 .section-title {
@@ -339,13 +413,13 @@ background-color: #ea580c !important;
 }
 
 .section-subtitle {
-    color: #2e2f31;
+    color: #cbd5e1;                      /* Yeh sahi color hai */
     font-size: 1.15rem;
     max-width: 650px;
     margin: 0 auto;
 }
 
-/* Trust Points */
+/* Trust Points - Hover effect ko safe banaya */
 .trust-content .trust-point {
     display: flex;
     gap: 20px;
@@ -355,11 +429,12 @@ background-color: #ea580c !important;
     margin-bottom: 20px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(249, 115, 22, 0.15);
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
+    transform: translateX(0);            /* Default position */
 }
 
 .trust-content .trust-point:hover {
-    transform: translateX(15px);
+    transform: translateX(10px);         /* Kam kiya 15px se 10px */
     background: rgba(249, 115, 22, 0.12);
     border-color: #f97316;
 }
@@ -373,6 +448,7 @@ background-color: #ea580c !important;
     justify-content: center;
     background: rgba(249, 115, 22, 0.15);
     border-radius: 12px;
+    flex-shrink: 0;
 }
 
 .trust-point h5 {
@@ -390,12 +466,11 @@ background-color: #ea580c !important;
 
 /* Stats Box */
 .stats-box {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(15px);
-    padding: 60px 40px;
-    border-radius: 28px;
+    background: linear-gradient(135deg, #1e2937, #334155);
+    padding: 50px 30px;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
     border: 1px solid rgba(249, 115, 22, 0.2);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
 }
 
 .stats-box h3.counter {
