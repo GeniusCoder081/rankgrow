@@ -6,6 +6,31 @@
     --light: #f8fafc;
 }
 
+/* ====================== GLOBAL MOBILE FIX ====================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;           /* Yeh line bahut important hai */
+}
+
+.container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (max-width: 768px) {
+    .navbar .container-fluid {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 /* ====================== NAVBAR ====================== */
 .navbar {
     background: rgba(17, 24, 39, 0.98) !important;
