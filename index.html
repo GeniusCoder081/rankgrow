@@ -12,6 +12,7 @@
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
+    <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -123,18 +124,17 @@
                 <!-- Project 1 -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
                     <div class="portfolio-card">
-                        <img src="images/vasanta.png" alt="Vasanta Health" class="img-fluid">
+                        <img src="images/vasanta.webp" alt="Vasanta Health" class="img-fluid" loading="lazy">
                         <div class="portfolio-overlay">
                             <h5>Vasanta Health</h5>
                             <a href="https://vasantahealth.in/" target="_blank" class="btn btn-light">View Website</a>
                         </div>
                     </div>
                 </div>
-
                 <!-- Project 2 -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="portfolio-card">
-                        <img src="images/makemysports.png" alt="Make My Sports">
+                        <img src="images/makemysports.webp" alt="Make My Sports" class="img-fluid" loading="lazy">
                         <div class="portfolio-overlay">
                             <h5>Make My Sports</h5>
                             <a href="https://makemysports.in/" target="_blank" class="btn btn-light">View Website</a>
@@ -145,7 +145,7 @@
                 <!-- Project 3 -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="portfolio-card">
-                        <img src="images/slotbooking1.png" alt="Slot Booking App">
+                        <img src="images/slotbooking1.webp" alt="Slot Booking App" class="img-fluid" loading="lazy">
                         <div class="portfolio-overlay">
                             <h5>Slot Booking Web App</h5>
                             <a href="https://slots.makemysports.in/" class="btn btn-light">View Project</a>
@@ -156,7 +156,7 @@
                 <!-- Project 4 (Jagriti Public School) -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="portfolio-card">
-                        <img src="images/jagriti.png" alt="Jagriti Public School">
+                        <img src="images/jagriti.webp" alt="Jagriti Public School" class="img-fluid" loading="lazy">
                         <div class="portfolio-overlay">
                             <h5>Jagriti Public School</h5>
                             <a href="#" class="btn btn-light">View Website</a>
@@ -167,7 +167,7 @@
                 <!-- Project 5 (Cohen & Klein) -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                     <div class="portfolio-card">
-                        <img src="images/cohen.png" alt="Cohen & Klein">
+                        <img src="images/cohen.webp" alt="Cohen & Klein" class="img-fluid" loading="lazy">
                         <div class="portfolio-overlay">
                             <h5>Cohen & Klein</h5>
                             <a href="https://cohenandklein.com/" target="_blank" class="btn btn-light">View Website</a>
@@ -178,7 +178,7 @@
                 <!-- Project 6 (Bloomers School) -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
                     <div class="portfolio-card">
-                        <img src="images/bloomers.png" alt="Bloomers School">
+                        <img src="images/bloomers.webp" alt="Bloomers School" class="img-fluid" loading="lazy">
                         <div class="portfolio-overlay">
                             <h5>Bloomers School</h5>
                             <a href="https://bloomers.webianworld.com/" class="btn btn-light">View Website</a>
@@ -582,13 +582,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 800,
-            once: true,
-            offset: 100
+        window.addEventListener("DOMContentLoaded", function () {
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 100
+            });
         });
 
         // Tere purane counter aur popup script same rakh sakta hai
+    </script>
+    <script>
+        window.addEventListener("load", function () {
+            AOS.init();
+        });
     </script>
     <script>
         // Counter Animation on Scroll
