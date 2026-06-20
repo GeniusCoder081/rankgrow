@@ -374,7 +374,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    ]
+
     <script>
         window.addEventListener("DOMContentLoaded", function () {
             AOS.init({
@@ -405,6 +405,12 @@
 
             emailjs.send("service_jsss3oa", "template_8zcsopk", templateParams)
                 .then(function (response) {
+
+                    // Google Ads Conversion
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-18247454738/O9YxCIKlxMIcEJKgiP1D'
+                    });
+
                     // Success Popup
                     const popup = document.createElement("div");
                     popup.className = "success-popup";
