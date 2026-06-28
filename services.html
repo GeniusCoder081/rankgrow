@@ -133,80 +133,83 @@
             margin-bottom: 20px;
         }
 
-        /* Pricing Cards */
-        /* ====================== PRICING SECTION ====================== */
-        .pricing-section {
-            padding: 110px 0;
+        /* Pricing Cards - Better Design */
+        .servic {
+            background: linear-gradient(135deg, #0f172a 0%, #1a2538 100%);
+        }
+
+        .bg-dark1 {
+            background: #0a0f1c;
         }
 
         .pricing-card {
             background: #1a2538;
             border-radius: 24px;
-            padding: 40px 30px;
+            padding: 40px 28px;
             height: 100%;
             transition: all 0.4s ease;
-            position: relative;
             border: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            flex-direction: column;
         }
 
         .pricing-card:hover {
-            transform: translateY(-12px);
+            transform: translateY(-15px);
             box-shadow: 0 25px 60px rgba(249, 115, 22, 0.25);
         }
 
         .pricing-card.popular {
             border: 3px solid #f97316;
-            transform: scale(1.05);
+            transform: scale(1.06);
+            z-index: 2;
         }
 
         .popular-badge {
             position: absolute;
-            top: 20px;
-            right: -38px;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
             background: #f97316;
             color: #111827;
-            padding: 6px 45px;
+            padding: 6px 28px;
+            border-radius: 50px;
             font-size: 0.95rem;
             font-weight: 700;
-            transform: rotate(45deg);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-            z-index: 10;
-        }
-
-        @media (max-width: 992px) {
-            .popular-badge {
-                right: -13px;
-                padding: 6px 30px;
-                font-size: 0.85rem;
-            }
+            box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4);
         }
 
         .price {
             font-size: 2.8rem;
             font-weight: 800;
             color: #f97316;
-            margin: 15px 0 5px;
+            margin: 15px 0 8px;
+            text-align: center;
         }
 
         .package-features {
             list-style: none;
             padding: 0;
-            margin: 25px 0 0;
+            margin: 25px 0 30px;
+            flex-grow: 1;
         }
 
         .package-features li {
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 11px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
             color: #e2e8f0;
+            font-size: 1.02rem;
         }
 
         .package-features i {
             color: #22c55e;
-            margin-right: 10px;
+            margin-right: 12px;
         }
 
-        .pricing-section .container {
-            padding-bottom: 30px;
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .pricing-card.popular {
+                transform: scale(1.02);
+            }
         }
     </style>
 </head>
@@ -247,8 +250,88 @@
         </div>
     </section>
 
+    <!-- ====================== PRICING PACKAGES ====================== -->
+    <section class="pricing-section py-5 bg-dark1">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 data-aos="fade-up" class="mb-3">Choose Your Perfect Package</h2>
+                <p class="section-subtitle mx-auto" data-aos="fade-up" data-aos-delay="100" style="max-width: 700px;">
+                    Transparent pricing • No hidden charges • Lifetime support available
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <!-- Starter Package -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="pricing-card h-100">
+                        <h5 class="text-center">Starter Package</h5>
+                        <div class="price text-center">₹7,999</div>
+                        <p class="text-muted text-center">One Time Payment</p>
+
+                        <ul class="package-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Up to 3 Pages Business Website</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Premium Responsive Design</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Contact Form + WhatsApp Chat</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Google Map Integration</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Basic On-Page SEO</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Free SSL & Speed Optimization</li>
+                            <li><i class="bi bi-check-circle-fill"></i> 30 Days Free Support</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline-light w-100 mt-auto">Choose Starter</a>
+                    </div>
+                </div>
+
+                <!-- Growth Package - Most Popular -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-card popular h-100">
+                        <div class="popular-badge">Most Popular</div>
+                        <h5 class="text-center">Growth Package</h5>
+                        <div class="price text-center">₹13,999</div>
+                        <p class="text-muted text-center">One Time Payment</p>
+
+                        <ul class="package-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Up to 8 Pages Premium Website</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Custom UI/UX Design</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Premium Animations</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Advanced Forms & WhatsApp</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Google Business Profile Setup</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Technical SEO + Speed Optimization</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Social Media Integration</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Free Domain & Hosting Support</li>
+                            <li><i class="bi bi-check-circle-fill"></i> 3 Months Free Support</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-warning w-100 mt-auto">Choose Growth</a>
+                    </div>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-card h-100">
+                        <h5 class="text-center">Premium Package</h5>
+                        <div class="price text-center">₹24,999</div>
+                        <p class="text-muted text-center">One Time Payment</p>
+
+                        <ul class="package-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Up to 15 Pages Premium Website</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Fully Custom UI/UX Design</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Advanced Animations</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Blog + Portfolio Section</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Advanced SEO & Analytics Setup</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Complete Security & SSL</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Google Search Console Setup</li>
+                            <li><i class="bi bi-check-circle-fill"></i> 6 Months Free Support</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline-light w-100 mt-auto">Choose Premium</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Services -->
-    <section class="py-5">
+    <section class="py-5 mt-5 servic">
         <div class="container">
             <div class="row g-4">
 
@@ -288,81 +371,83 @@
         </div>
     </section>
 
-    <!-- ====================== PRICING PACKAGES ====================== -->
-    <section class="pricing-section py-5 bg-dark">
+
+    <!-- ====================== FAQ SECTION ====================== -->
+    <section class="faq-section py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 data-aos="fade-up">Choose Your Perfect Package</h2>
+                <h2 class="section-title" data-aos="fade-up">Frequently Asked Questions</h2>
                 <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
-                    Transparent pricing • No hidden charges • Lifetime support available
+                    Common questions about our services. Can't find your answer? Feel free to contact us.
                 </p>
             </div>
 
-            <div class="row g-4 justify-content-center">
+            <div class="faq-container" id="faqAccordion">
 
-                <!-- Basic Package -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                    <div class="pricing-card">
-                        <h5>Starter Package</h5>
-                        <div class="price">₹7,999</div>
-                        <p class="text-muted">One Time Payment</p>
-
-                        <ul class="package-features">
-                            <li><i class="bi bi-check-circle-fill"></i> 2-3 Page Professional Website</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Fully Mobile Responsive</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Basic SEO Setup</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Contact & WhatsApp Form</li>
-                            <li><i class="bi bi-check-circle-fill"></i> 30 Days Free Support</li>
-                        </ul>
-                        <a href="contact.html" class="btn btn-outline-light w-100 mt-4">Choose Starter</a>
+                <!-- FAQ Item 1 -->
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="0">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How much does a website cost?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Website pricing starts from ₹8,999 only. It depends on your requirements like number of
+                            pages, features, e-commerce, etc. We provide custom quotes after understanding your business
+                            needs.</p>
                     </div>
                 </div>
 
-                <!-- Growth Package - Most Popular -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="pricing-card popular">
-                        <div class="popular-badge">Most Popular</div>
-                        <h5>Growth Package</h5>
-                        <div class="price">₹13,999</div>
-                        <p class="text-muted">One Time Payment</p>
-
-                        <ul class="package-features">
-                            <li><i class="bi bi-check-circle-fill"></i> 5-6 Page Premium Website</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Modern Design with Animations</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Google Map + Reviews Setup</li>
-                            <li><i class="bi bi-check-circle-fill"></i> 3 Months Local SEO</li>
-                            <li><i class="bi bi-check-circle-fill"></i> WhatsApp Link Integration</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Speed & Security Optimization</li>
-                            <li><i class="bi bi-check-circle-fill"></i> 3 Months Free Support</li>
-                        </ul>
-                        <a href="contact.html" class="btn btn-warning w-100 mt-4">Choose Growth</a>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How long does it take to build a website?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most simple business websites are delivered within 5-7 days. Complex websites with many
+                            features may take 10-15 days. We keep you updated at every step.</p>
                     </div>
                 </div>
 
-                <!-- Premium Package -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="pricing-card">
-                        <h5>Premium Package</h5>
-                        <div class="price">₹24,999</div>
-                        <p class="text-muted">One Time Payment</p>
+                <!-- FAQ Item 3 -->
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you provide Google Map Listing & Local SEO?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We provide complete Google My Business setup, Map listing, and Local SEO services to
+                            help your business rank higher in local searches.</p>
+                    </div>
+                </div>
 
-                        <ul class="package-features">
-                            <li><i class="bi bi-check-circle-fill"></i> Unlimited Pages Website</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Custom Design & Features</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Full Local SEO (6 Months)</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Google Ads Setup</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Monthly Performance Report</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Priority Support</li>
-                            <li><i class="bi bi-check-circle-fill"></i> 6 Months Free Support</li>
-                        </ul>
-                        <a href="contact.html" class="btn btn-outline-light w-100 mt-4">Choose Premium</a>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Will my website be mobile friendly?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! All our websites are fully responsive and look perfect on mobile, tablet, and
+                            desktop devices.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you provide maintenance & support after delivery?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide 6 months free support and lifetime paid maintenance. We are always available
+                            for any updates or changes you need.</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer class="footer-section">
         <div class="container">
@@ -421,7 +506,12 @@
             </div>
         </div>
     </footer>
-
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918057556449?text=Hello%20Rank%20Grow%20Digital,%20I%20want%20to%20make%20a%20website%20for%20my%20business."
+        class="whatsapp-float" target="_blank" rel="noopener">
+        <i class="bi bi-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+    </a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
