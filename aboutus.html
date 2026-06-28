@@ -173,6 +173,38 @@
             text-align: center;
         }
 
+        .story-content {
+            background: #1a2538;
+            padding: 50px;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+            height: 100%;
+        }
+
+        .about-image-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: 24px;
+        }
+
+        .about-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        .about-image-wrapper:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .story-content {
+                padding: 35px 25px;
+            }
+        }
+
         /* Responsive Fixes */
         @media (max-width: 768px) {
             .about-hero {
@@ -186,6 +218,43 @@
 
             .about-hero p {
                 font-size: 1.1rem;
+            }
+
+            .story-content {
+                padding: 35px 25px;
+            }
+        }
+
+
+        /* Story Section Image Fix */
+        .about-image-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+            border-radius: 24px;
+        }
+
+        .about-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            /* Image ko crop karke fit karega */
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Mobile pe extra safety */
+        @media (max-width: 768px) {
+            .about-image-wrapper {
+                margin-top: 20px;
+            }
+
+            .about-image-wrapper img {
+                border-radius: 16px;
+                max-height: 380px;
+                /* Mobile pe height limit */
             }
 
             .story-content {
@@ -233,29 +302,71 @@
     </section>
 
     <!-- Our Story -->
-    <section class="story-section">
+    <section class="story-section py-5">
         <div class="container">
             <div class="row align-items-center g-5">
+
+                <!-- Left Side - Content -->
                 <div class="col-lg-6" data-aos="fade-right">
                     <div class="story-content">
                         <h2 class="mb-4">Our Story</h2>
-                        <p class="lead">
-                            RankGrow Digital started with a simple belief — every local business deserves a strong
-                            online presence.
+                        <p class="lead mb-4">
+                            RankGrow Digital started with a simple belief — <strong>every local business deserves a
+                                strong online presence</strong>.
                         </p>
                         <p>
-                            We saw many hardworking shop owners, doctors, schools, and gyms in Meerut struggling because
-                            they didn't have a proper website or weren't visible on Google.
+                            We saw many hardworking shop owners, doctors, schools, gyms aur small businesses in Meerut
+                            struggling because they didn't have a proper website or weren't visible on Google.
+                            Customers unhe online nahi dhoond pa rahe the.
                         </p>
-                        <p>
-                            So we decided to create a solution that is affordable, fast, and result-oriented. Today, we
-                            have proudly helped 50+ local businesses grow their customer base.
+                        <p class="mb-4">
+                            So we decided to create a solution that is <strong>affordable, fast, modern aur
+                                result-oriented</strong>.
+                            Aaj hum 50+ local businesses ko unka digital growth dene mein madad kar chuke hain.
                         </p>
+
+                        <!-- Key Points -->
+                        <h5 class="mt-5 mb-3">Why Businesses Trust Us</h5>
+                        <div class="row g-3">
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                                <div class="d-flex align-items-start">
+                                    <span class="text-success me-3 mt-1">✔</span>
+                                    <div>
+                                        <strong>Fast Delivery</strong><br>
+                                        <small>Simple websites 5-7 days mein ready</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+                                <div class="d-flex align-items-start">
+                                    <span class="text-success me-3 mt-1">✔</span>
+                                    <div>
+                                        <strong>Local SEO Expert</strong><br>
+                                        <small>Google Map aur local search mein top ranking</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                                <div class="d-flex align-items-start">
+                                    <span class="text-success me-3 mt-1">✔</span>
+                                    <div>
+                                        <strong>After Support</strong><br>
+                                        <small>Website live hone ke baad bhi full support</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <img src="images/about.jpeg" alt="Our Team" class="img-fluid rounded-4 shadow">
+
+                <!-- Right Side - Image -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="about-image-wrapper">
+                        <img src="images/about.jpeg" alt="Rank Grow Digital Team - Meerut"
+                            class="img-fluid rounded-4 shadow">
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -314,82 +425,6 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer-section">
-        <div class="container">
-            <div class="row">
-
-                <!-- Column 1: About + Social -->
-                <div class="col-lg-4 col-md-6 mb-5">
-                    <h4 class="footer-logo">
-                        RankGrow <span class="text-orange">Digital</span>
-                    </h4>
-                    <p class="footer-desc mt-3">
-                        We help local businesses in Meerut and surrounding areas grow online with
-                        modern websites, Google Maps optimization, and Local SEO.
-                    </p>
-
-                    <!-- Social Icons -->
-                    <div class="social-icons mt-4">
-                        <a href="https://www.instagram.com/rankgrowdigital/" target="_blank" title="Instagram">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ritik-kumar-76117b25b/" target="_blank" title="LinkedIn">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/GeniusCoder081" target="_blank" title="GitHub">
-                            <i class="bi bi-github"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@Geniusbhaivlogger" target="_blank" title="YouTube">
-                            <i class="bi bi-youtube"></i>
-                        </a>
-                        <a href="https://wa.me/918057556449" target="_blank" title="WhatsApp">
-                            <i class="bi bi-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Column 2: Quick Links -->
-                <div class="col-lg-2 col-md-6 mb-5">
-                    <h5 class="footer-heading">Quick Links</h5>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="aboutus.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 3: Services -->
-                <div class="col-lg-3 col-md-6 mb-5">
-                    <h5 class="footer-heading">Our Services</h5>
-                    <ul class="footer-links">
-                        <li>Website Development</li>
-                        <li>Google Map Listing</li>
-                        <li>Local SEO</li>
-                        <li>Google Ads Management</li>
-                    </ul>
-                </div>
-
-                <!-- Column 4: Contact -->
-                <div class="col-lg-3 col-md-6 mb-5">
-                    <h5 class="footer-heading">Get In Touch</h5>
-                    <ul class="footer-contact">
-                        <li><i class="bi bi-telephone-fill"></i> +91 80575 56449</li>
-                        <li><i class="bi bi-envelope-fill"></i> ritikprajapati081@gmail.com</li>
-                        <li><i class="bi bi-geo-alt-fill"></i> Ahmednagar Badhla, Meerut, Uttar Pradesh 250406</li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <!-- Bottom Bar -->
-            <div class="footer-bottom text-center mt-5">
-                <p class="mb-0">&copy; 2026 RankGrow <span class="text-orange">Digital</span>. All Rights
-                    Reserved.</p>
-            </div>
-        </div>
-    </footer>
     <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/918057556449?text=Hello%20Rank%20Grow%20Digital,%20I%20want%20to%20make%20a%20website%20for%20my%20business."
         class="whatsapp-float" target="_blank" rel="noopener">
