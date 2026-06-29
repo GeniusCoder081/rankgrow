@@ -53,7 +53,40 @@ body {
 .nav-link.active {
     color: #f97316 !important;
 }
+.navlogo {
+    width: 220px;
+    height: auto;
+    max-width: 100%;
+    transition: 0.3s ease;
+}
 
+/* Laptop */
+@media (max-width: 1200px) {
+    .navlogo {
+        width: 220px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .navlogo {
+        width: 190px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .navlogo {
+        width: 160px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 576px) {
+    .navlogo {
+        width: 140px;
+    }
+}
 @media (max-width: 991px) {
     .navbar-nav {
         padding: 20px 0;
