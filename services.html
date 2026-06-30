@@ -211,40 +211,69 @@
                 transform: scale(1.02);
             }
         }
+
+        .offer-badge{
+    display: inline-block;
+    margin: 12px auto 18px;
+    padding: 8px 18px;
+    background: linear-gradient(135deg, #EA580C, #ff8c42);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(234, 88, 12, 0.35);
+    animation: pulseOffer 2s infinite;
+    letter-spacing: .3px;
+}
+
+@keyframes pulseOffer{
+    0%{
+        transform: scale(1);
+        box-shadow: 0 8px 20px rgba(234,88,12,.35);
+    }
+    50%{
+        transform: scale(1.04);
+        box-shadow: 0 10px 28px rgba(234,88,12,.55);
+    }
+    100%{
+        transform: scale(1);
+        box-shadow: 0 8px 20px rgba(234,88,12,.35);
+    }
+}
     </style>
 </head>
 
 <body>
 
-   <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-    <div class="container px-4">
-        <a class="navbar-brand" href="index.html">
-            <img src="/images/logomain.png" alt="RankGrow Digital Logo" class="navlogo">
-        </a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav align-items-center">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                
-                <!-- Get Quote Button -->
-                <li class="nav-item ms-3">
-                    <a href="contact.html" class="btn btn-warning text-dark fw-bold px-4 py-2 get-quote-btn">
-                        Get Free Quote
-                    </a>
-                </li>
-            </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+        <div class="container px-4">
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logomain.png" alt="RankGrow Digital Logo" class="navlogo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+                    <!-- Get Quote Button -->
+                    <li class="nav-item ms-3">
+                        <a href="contact.html" class="btn btn-warning text-dark fw-bold px-4 py-2 get-quote-btn">
+                            Get Free Quote
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
     <!-- Hero -->
     <section class="services-hero">
         <div class="container">
@@ -272,7 +301,9 @@
                     <div class="pricing-card h-100">
                         <h5 class="text-center">Starter Package</h5>
                         <div class="price text-center">₹6,999</div>
-                        <p class="text-muted text-center">One Time Payment</p>
+                        <div class="offer-badge">
+                            🔥 Limited Time Offer • 12% OFF for First 8 Clients
+                        </div>
 
                         <ul class="package-features">
                             <li><i class="bi bi-check-circle-fill"></i> Up to 3 Pages Business Website</li>
@@ -529,10 +560,10 @@
         });
     </script>
     <script>
-window.addEventListener('scroll', () => {
-    document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
-});
-</script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
 </body>
 
 </html>
