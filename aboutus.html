@@ -268,22 +268,28 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-        <div class="container px-3">
+        <div class="container px-4">
             <a class="navbar-brand" href="index.html">
                 <img src="/images/logomain.png" alt="RankGrow Digital Logo" class="navlogo">
             </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center text-center">
+                <ul class="navbar-nav align-items-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link active" href="aboutus.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+                    <!-- Get Quote Button -->
                     <li class="nav-item ms-3">
-                        <a href="contact.html" class="btn btn-warning text-dark fw-bold px-4 py-2">Get Quote</a>
+                        <a href="contact.html" class="btn btn-warning text-dark fw-bold px-4 py-2 get-quote-btn">
+                            Get Free Quote
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -502,6 +508,11 @@
             AOS.init({
                 once: true
             });
+        });
+    </script>
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
         });
     </script>
 </body>

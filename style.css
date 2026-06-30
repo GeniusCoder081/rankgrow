@@ -33,26 +33,53 @@ body {
 }
 /* ====================== NAVBAR ====================== */
 .navbar {
-    background: rgba(10, 15, 28, 0.98) !important;
+    background: rgba(10, 15, 28, 0.97) !important;
     backdrop-filter: blur(12px);
-    padding: 15px 0;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    padding: 8px 0;
+    background: rgba(10, 15, 28, 0.99) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-brand {
-    font-size: 1.65rem;
+    font-size: 1.7rem;
     letter-spacing: 1px;
 }
 
 .nav-link {
     font-weight: 500;
-    padding: 8px 15px !important;
+    padding: 10px 16px !important;
     color: #e2e8f0 !important;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .nav-link:hover,
 .nav-link.active {
     color: #f97316 !important;
 }
+
+.get-quote-btn {
+    background: #f97316 !important;
+    color: #111827 !important;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(249, 115, 22, 0.3);
+}
+
+.get-quote-btn:hover {
+    background: #fb923c !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(249, 115, 22, 0.4);
+}
+
+/* Logo Responsive */
 .navlogo {
     width: 220px;
     height: auto;
@@ -60,44 +87,36 @@ body {
     transition: 0.3s ease;
 }
 
-/* Laptop */
+/* ====================== RESPONSIVE ====================== */
 @media (max-width: 1200px) {
-    .navlogo {
-        width: 220px;
-    }
+    .navlogo { width: 210px; }
 }
 
-/* Tablet */
 @media (max-width: 992px) {
-    .navlogo {
-        width: 190px;
-    }
+    .navlogo { width: 190px; }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
-    .navlogo {
-        width: 160px;
+    .navlogo { width: 165px; }
+    .navbar { padding: 10px 0; }
+}
+
+@media (max-width: 576px) {
+    .navlogo { width: 145px; }
+    .get-quote-btn {
+        margin-top: 10px;
+        width: 100%;
     }
 }
 
-/* Small Mobile */
-@media (max-width: 576px) {
-    .navlogo {
-        width: 140px;
-    }
-}
+/* Mobile Menu */
 @media (max-width: 991px) {
     .navbar-nav {
         padding: 20px 0;
+        text-align: center;
     }
-    
     .nav-item {
-        margin-bottom: 8px;
-    }
-    
-    .navbar-toggler {
-        border-color: #f97316;
+        margin-bottom: 6px;
     }
 }
 /* ====================== NAVBAR FIX ====================== */

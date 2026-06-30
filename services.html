@@ -216,30 +216,35 @@
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-        <div class="container px-3">
-            <a class="navbar-brand" href="index.html">
-                <img src="/images/logomain.png" alt="RankGrow Digital Logo" class="navlogo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item ms-3">
-                        <a href="contact.html" class="btn btn-warning text-dark fw-bold px-4">Get Quote</a>
-                    </li>
-                </ul>
-            </div>
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container px-4">
+        <a class="navbar-brand" href="index.html">
+            <img src="/images/logomain.png" alt="RankGrow Digital Logo" class="navlogo">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                
+                <!-- Get Quote Button -->
+                <li class="nav-item ms-3">
+                    <a href="contact.html" class="btn btn-warning text-dark fw-bold px-4 py-2 get-quote-btn">
+                        Get Free Quote
+                    </a>
+                </li>
+            </ul>
         </div>
-    </nav>
-
+    </div>
+</nav>
     <!-- Hero -->
     <section class="services-hero">
         <div class="container">
@@ -273,7 +278,7 @@
                             <li><i class="bi bi-check-circle-fill"></i> Up to 3 Pages Business Website</li>
                             <li><i class="bi bi-check-circle-fill"></i> Premium Responsive Design</li>
                             <li><i class="bi bi-check-circle-fill"></i> Contact Form + WhatsApp Chat</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Google Map Integration</li>
+                            <!-- <li><i class="bi bi-check-circle-fill"></i> Google Map Integration</li> -->
                             <li><i class="bi bi-check-circle-fill"></i> Basic On-Page SEO</li>
                             <li><i class="bi bi-check-circle-fill"></i> Free SSL & Speed Optimization</li>
                             <li><i class="bi bi-check-circle-fill"></i> 30 Days Free Support</li>
@@ -523,6 +528,11 @@
             });
         });
     </script>
+    <script>
+window.addEventListener('scroll', () => {
+    document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
 </body>
 
 </html>

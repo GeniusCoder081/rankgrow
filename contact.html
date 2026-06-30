@@ -235,8 +235,8 @@
         /* Mobile Responsive Fixes */
         @media (max-width: 768px) {
             .contact-hero {
-                min-height: 65vh;
-                padding-top: 90px;
+                min-height: 47vh;
+                padding: 70px 0px 0px 0px;
             }
 
             .contact-hero h1 {
@@ -269,29 +269,34 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-        <div class="container px-3">
-            <a class="navbar-brand" href="index.html">
-                <img src="/images/logomain.png" alt="RankGrow Digital Logo" class="navlogo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center text-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-                    <li class="nav-item ms-3">
-                        <a href="contact.html" class="btn btn-warning text-dark fw-bold px-4 py-2">Get Quote</a>
-                    </li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container px-4">
+        <a class="navbar-brand" href="index.html">
+            <img src="/images/logomain.png" alt="RankGrow Digital Logo" class="navlogo">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                
+                <!-- Get Quote Button -->
+                <li class="nav-item ms-3">
+                    <a href="contact.html" class="btn btn-warning text-dark fw-bold px-4 py-2 get-quote-btn">
+                        Get Free Quote
+                    </a>
+                </li>
+            </ul>
         </div>
-    </nav>
-
+    </div>
+</nav>
     <!-- Contact Hero -->
     <section class="contact-hero">
         <div class="container px-4">
@@ -455,7 +460,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
+<script>
+window.addEventListener('scroll', () => {
+    document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
     <script>
         window.addEventListener("DOMContentLoaded", function () {
             AOS.init({
