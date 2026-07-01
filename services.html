@@ -212,34 +212,65 @@
             }
         }
 
-        .offer-badge{
-    display: inline-block;
-    margin: 12px auto 18px;
-    padding: 8px 18px;
-    background: linear-gradient(135deg, #EA580C, #ff8c42);
-    color: #fff;
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 50px;
-    box-shadow: 0 8px 20px rgba(234, 88, 12, 0.35);
-    animation: pulseOffer 2s infinite;
-    letter-spacing: .3px;
-}
+        .offer-badge {
+            display: inline-block;
+            margin: 12px auto 18px;
+            padding: 8px 18px;
+            background: linear-gradient(135deg, #EA580C, #ff8c42);
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 50px;
+            box-shadow: 0 8px 20px rgba(234, 88, 12, 0.35);
+            animation: pulseOffer 2s infinite;
+            letter-spacing: .3px;
+        }
 
-@keyframes pulseOffer{
-    0%{
-        transform: scale(1);
-        box-shadow: 0 8px 20px rgba(234,88,12,.35);
-    }
-    50%{
-        transform: scale(1.04);
-        box-shadow: 0 10px 28px rgba(234,88,12,.55);
-    }
-    100%{
-        transform: scale(1);
-        box-shadow: 0 8px 20px rgba(234,88,12,.35);
-    }
-}
+        @keyframes pulseOffer {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 8px 20px rgba(234, 88, 12, .35);
+            }
+
+            50% {
+                transform: scale(1.04);
+                box-shadow: 0 10px 28px rgba(234, 88, 12, .55);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 8px 20px rgba(234, 88, 12, .35);
+            }
+        }
+
+        .package-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+            border: none;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 10px;
+            transition: .3s;
+            padding: 12px;
+        }
+
+        .whatsapp-btn:hover {
+            background: #1ebe5d;
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(37, 211, 102, .35);
+        }
+
+        .package-buttons .btn {
+            border-radius: 10px;
+            font-weight: 600;
+            padding: 12px;
+        }
     </style>
 </head>
 
@@ -314,7 +345,20 @@
                             <li><i class="bi bi-check-circle-fill"></i> Free SSL & Speed Optimization</li>
                             <li><i class="bi bi-check-circle-fill"></i> 30 Days Free Support</li>
                         </ul>
-                        <a href="contact.html" class="btn btn-outline-light w-100 mt-auto">Choose Starter</a>
+                        <div class="package-buttons mt-auto">
+                            <!-- Contact Page -->
+                            <a href="contact.html" class="btn btn-warning w-100 mb-2">
+                                <i class="bi bi-arrow-right-circle-fill me-2"></i>
+                                Choose Starter
+                            </a>
+
+                            <!-- WhatsApp -->
+                            <a href="https://wa.me/918057556449?text=Hi%20Rank%20Grow%20Digital,%20I%20want%20to%20know%20about%20the%20Starter%20Package."
+                                target="_blank" class="btn btn-success w-100 whatsapp-btn">
+                                <i class="bi bi-whatsapp me-2"></i>
+                                Chat on WhatsApp
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -337,7 +381,18 @@
                             <li><i class="bi bi-check-circle-fill"></i> Free Domain & Hosting Support</li>
                             <li><i class="bi bi-check-circle-fill"></i> 3 Months Free Support</li>
                         </ul>
-                        <a href="contact.html" class="btn btn-warning w-100 mt-auto">Choose Growth</a>
+                        <div class="package-buttons mt-auto">
+                            <a href="contact.html" class="btn btn-warning w-100 mb-2">
+                                <i class="bi bi-arrow-right-circle-fill me-2"></i>
+                                Choose Growth
+                            </a>
+
+                            <a href="https://wa.me/918057556449?text=Hi,%20I%20am%20interested%20in%20the%20Growth%20Package."
+                                target="_blank" class="btn btn-success w-100 whatsapp-btn">
+                                <i class="bi bi-whatsapp me-2"></i>
+                                Chat on WhatsApp
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -358,7 +413,18 @@
                             <li><i class="bi bi-check-circle-fill"></i> Google Search Console Setup</li>
                             <li><i class="bi bi-check-circle-fill"></i> 6 Months Free Support</li>
                         </ul>
-                        <a href="contact.html" class="btn btn-outline-light w-100 mt-auto">Choose Premium</a>
+                        <div class="package-buttons mt-auto">
+                            <a href="contact.html" class="btn btn-warning w-100 mb-2">
+                                <i class="bi bi-arrow-right-circle-fill me-2"></i>
+                                Choose Premium
+                            </a>
+
+                            <a href="https://wa.me/918057556449?text=Hi,%20I%20want%20the%20Premium%20Package."
+                                target="_blank" class="btn btn-success w-100 whatsapp-btn">
+                                <i class="bi bi-whatsapp me-2"></i>
+                                Chat on WhatsApp
+                            </a>
+                        </div>
                     </div>
                 </div>
 
