@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /includes/
-Disallow: /send-mail.php
-
-Sitemap: https://rankgrowdigital.com/sitemap.xml

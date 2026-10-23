@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Tags -->
+    <title>Services - Website Development, SEO & Digital Marketing in Meerut</title>
+    <meta name="description"
+        content="Rank Grow Digital Meerut - Professional Website Development, Local SEO, Google Ads, Ecommerce Website, WordPress aur Social Media Marketing services. Best prices & guaranteed results.">
+
+    <meta name="keywords"
+        content="website development meerut, digital marketing services meerut, local seo meerut, google ads meerut, ecommerce website meerut, wordpress developer meerut">
+
+    <!-- ============== FAVICONS ============== -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <!-- PNG Fallbacks -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+    <!-- Apple Devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <!-- Old one ko replace kar diya -->
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+    <!-- Optional but Recommended -->
+    <link rel="manifest" href="/images/site.webmanifest">
+    <!-- Canonical -->
+    <link rel="canonical" href="https://rankgrowdigital.in/services" />
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Our Services - Rank Grow Digital Meerut">
+    <meta property="og:description"
+        content="Website Development, Local SEO, Google Ads, Ecommerce & Complete Digital Marketing Solutions in Meerut">
+    <meta property="og:image" content="https://rankgrowdigital.in/images/og-image.jpg">
+    <meta property="og:url" content="https://rankgrowdigital.in/services">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Rank Grow Digital">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Services - Rank Grow Digital">
+    <meta name="twitter:description" content="Professional Digital Marketing & Website Services in Meerut">
+
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18247454738"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-18247454738');
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Digital Marketing Agency",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Rank Grow Digital",
+        "url": "https://rankgrowdigital.in",
+        "telephone": "+918057556449",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Ahmednagar Badhla",
+          "addressLocality": "Meerut",
+          "addressRegion": "Uttar Pradesh",
+          "postalCode": "250406",
+          "addressCountry": "IN"
+        }
+      },
+      "areaServed": "Meerut, Uttar Pradesh"
+    }
+    </script>
+
+
+    <style>
+        body {
+            background: #0a0f1c;
+            color: #cbd5e1;
+        }
+
+        .navbar {
+            background: rgba(10, 15, 28, 0.98) !important;
+            backdrop-filter: blur(10px);
+        }
+
+        .services-hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1a2538 100%);
+            padding: 160px 0 100px;
+            text-align: center;
+        }
+
+        .services-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: white;
+        }
+
+        /* Service Cards */
+        .service-card {
+            background: #1a2538;
+            border-radius: 20px;
+            padding: 40px 30px;
+            height: 100%;
+            transition: all 0.4s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 45px rgba(249, 115, 22, 0.3);
+        }
+
+        .service-icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        /* Pricing Cards - Better Design */
+        .servic {
+            background: linear-gradient(135deg, #0f172a 0%, #1a2538 100%);
+        }
+
+        .bg-dark1 {
+            background: #0a0f1c;
+        }
+
+        .pricing-card {
+            background: #1a2538;
+            border-radius: 24px;
+            padding: 40px 28px;
+            height: 100%;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 60px rgba(249, 115, 22, 0.25);
+        }
+
+        .pricing-card.popular {
+            border: 3px solid #f97316;
+            transform: scale(1.06);
+            z-index: 2;
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f97316;
+            color: #111827;
+            padding: 6px 28px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4);
+        }
+
+        .price {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #f97316;
+            margin: 15px 0 8px;
+            text-align: center;
+        }
+
+        .package-features {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0 30px;
+            flex-grow: 1;
+        }
+
+        .package-features li {
+            padding: 11px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            color: #e2e8f0;
+            font-size: 1.02rem;
+        }
+
+        .package-features i {
+            color: #22c55e;
+            margin-right: 12px;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .pricing-card.popular {
+                transform: scale(1.02);
+            }
+        }
+
+        .offer-badge {
+            display: inline-block;
+            margin: 12px auto 18px;
+            padding: 8px 18px;
+            background: linear-gradient(135deg, #EA580C, #ff8c42);
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 50px;
+            box-shadow: 0 8px 20px rgba(234, 88, 12, 0.35);
+            animation: pulseOffer 2s infinite;
+            letter-spacing: .3px;
+        }
+
+        @keyframes pulseOffer {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 8px 20px rgba(234, 88, 12, .35);
+            }
+
+            50% {
+                transform: scale(1.04);
+                box-shadow: 0 10px 28px rgba(234, 88, 12, .55);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 8px 20px rgba(234, 88, 12, .35);
+            }
+        }
+
+        .package-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+            border: none;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 10px;
+            transition: .3s;
+            padding: 12px;
+        }
+
+        .whatsapp-btn:hover {
+            background: #1ebe5d;
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(37, 211, 102, .35);
+        }
+
+        .package-buttons .btn {
+            border-radius: 10px;
+            font-weight: 600;
+            padding: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+        <div class="container px-4">
+            <a class="navbar-brand" href="/">
+                <img src="/images/logomain.png" alt="RankGrow Digital Logo" class="navlogo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/aboutus">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+
+                    <!-- Get Quote Button -->
+                    <li class="nav-item ms-3">
+                        <a href="/contact" class="btn btn-warning text-dark fw-bold px-4 py-2 get-quote-btn">
+                            Get Free Quote
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero -->
+    <section class="services-hero">
+        <div class="container">
+            <h1 data-aos="fade-up">Our Services & Pricing</h1>
+            <p class="mt-4" data-aos="fade-up" data-aos-delay="100">
+                Professional digital solutions at honest prices. Choose the package that fits your business.
+            </p>
+        </div>
+    </section>
+
+    <!-- ====================== PRICING PACKAGES ====================== -->
+    <section class="pricing-section py-5 bg-dark1">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 data-aos="fade-up" class="mb-3">Choose Your Perfect Package</h2>
+                <p class="section-subtitle mx-auto" data-aos="fade-up" data-aos-delay="100" style="max-width: 700px;">
+                    Transparent pricing • No hidden charges • Lifetime support available
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <!-- Starter Package -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="pricing-card h-100">
+                        <h5 class="text-center">Starter Package</h5>
+                        <div class="price text-center">₹8,999</div>
+                        <div class="offer-badge">
+                            🔥 Limited Time Offer • 12% OFF for First 8 Clients
+                        </div>
+
+                        <ul class="package-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Up to 3 Pages Business Website</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Premium Responsive Design</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Contact Form + WhatsApp Chat</li>
+                            <!-- <li><i class="bi bi-check-circle-fill"></i> Google Map Integration</li> -->
+                            <li><i class="bi bi-check-circle-fill"></i> Basic On-Page SEO</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Free SSL & Speed Optimization</li>
+                            <li><i class="bi bi-check-circle-fill"></i> 30 Days Free Support</li>
+                        </ul>
+                        <div class="package-buttons mt-auto">
+                            <!-- Contact Page -->
+                            <a href="/contact" class="btn btn-warning w-100 mb-2">
+                                <i class="bi bi-arrow-right-circle-fill me-2"></i>
+                                Choose Starter
+                            </a>
+
+                            <!-- WhatsApp -->
+                            <a href="https://wa.me/918057556449?text=Hi%20Rank%20Grow%20Digital,%20I%20want%20to%20know%20about%20the%20Starter%20Package."
+                                target="_blank" class="btn btn-success w-100 whatsapp-btn">
+                                <i class="bi bi-whatsapp me-2"></i>
+                                Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Growth Package - Most Popular -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-card popular h-100">
+                        <div class="popular-badge">Most Popular</div>
+                        <h5 class="text-center">Growth Package</h5>
+                        <div class="price text-center">₹11,999</div>
+                        <p class="text-muted text-center">One Time Payment</p>
+
+                        <ul class="package-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Up to 8 Pages Premium Website</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Custom UI/UX Design</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Premium Animations</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Advanced Forms & WhatsApp</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Google Business Profile Setup</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Technical SEO + Speed Optimization</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Social Media Integration</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Free Domain & Hosting Support</li>
+                            <li><i class="bi bi-check-circle-fill"></i> 3 Months Free Support</li>
+                        </ul>
+                        <div class="package-buttons mt-auto">
+                            <a href="/contact" class="btn btn-warning w-100 mb-2">
+                                <i class="bi bi-arrow-right-circle-fill me-2"></i>
+                                Choose Growth
+                            </a>
+
+                            <a href="https://wa.me/918057556449?text=Hi,%20I%20am%20interested%20in%20the%20Growth%20Package."
+                                target="_blank" class="btn btn-success w-100 whatsapp-btn">
+                                <i class="bi bi-whatsapp me-2"></i>
+                                Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-card h-100">
+                        <h5 class="text-center">Premium Package</h5>
+                        <div class="price text-center">₹17,999</div>
+                        <p class="text-muted text-center">One Time Payment</p>
+
+                        <ul class="package-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Up to 15 Pages Premium Website</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Fully Custom UI/UX Design</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Advanced Animations</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Blog + Portfolio Section</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Advanced SEO & Analytics Setup</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Complete Security & SSL</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Google Search Console Setup</li>
+                            <li><i class="bi bi-check-circle-fill"></i> 6 Months Free Support</li>
+                        </ul>
+                        <div class="package-buttons mt-auto">
+                            <a href="/contact" class="btn btn-warning w-100 mb-2">
+                                <i class="bi bi-arrow-right-circle-fill me-2"></i>
+                                Choose Premium
+                            </a>
+
+                            <a href="https://wa.me/918057556449?text=Hi,%20I%20want%20the%20Premium%20Package."
+                                target="_blank" class="btn btn-success w-100 whatsapp-btn">
+                                <i class="bi bi-whatsapp me-2"></i>
+                                Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-5 mt-5 servic">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="service-icon">🌐</div>
+                        <h4>Website Development</h4>
+                        <p>Fast, modern and mobile-friendly websites that look professional and convert visitors into
+                            customers.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">📍</div>
+                        <h4>Google Map Listing</h4>
+                        <p>Get your business on Google Maps so local customers can easily find and contact you.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">📈</div>
+                        <h4>Local SEO</h4>
+                        <p>Rank higher on Google for local searches and get more organic calls & leads.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">💰</div>
+                        <h4>Google Ads</h4>
+                        <p>Run targeted ads to get instant leads and fast business growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ====================== FAQ SECTION ====================== -->
+    <section class="faq-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" data-aos="fade-up">Frequently Asked Questions</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Common questions about our services. Can't find your answer? Feel free to contact us.
+                </p>
+            </div>
+
+            <div class="faq-container" id="faqAccordion">
+
+                <!-- FAQ Item 1 -->
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="0">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How much does a website cost?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Website pricing starts from ₹8,999 only. It depends on your requirements like number of
+                            pages, features, e-commerce, etc. We provide custom quotes after understanding your business
+                            needs.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How long does it take to build a website?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most simple business websites are delivered within 5-7 days. Complex websites with many
+                            features may take 10-15 days. We keep you updated at every step.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you provide Google Map Listing & Local SEO?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We provide complete Google My Business setup, Map listing, and Local SEO services to
+                            help your business rank higher in local searches.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Will my website be mobile friendly?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! All our websites are fully responsive and look perfect on mobile, tablet, and
+                            desktop devices.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you provide maintenance & support after delivery?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide 6 months free support and lifetime paid maintenance. We are always available
+                            for any updates or changes you need.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <a class="navbar-brand" href="/">
+                        <img src="/images/logomain.png" alt="RankGrow Digital Logo" class="navlogo">
+                    </a>
+                    <p class="footer-desc mt-3">
+                        We help local businesses in Meerut grow online with modern websites,
+                        Google Maps optimization and Local SEO.
+                    </p>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.instagram.com/rankgrowdigital/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" ><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="#" ><i class="bi bi-github"></i></a>
+                        <a href="#" ><i
+                                class="bi bi-youtube"></i></a>
+                        <a href="https://wa.me/918057556449" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-5">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/portfolio">Portfolio</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="footer-heading">Our Services</h5>
+                    <ul class="footer-links">
+                        <li>Website Development</li>
+                        <li>Google Map Listing</li>
+                        <li>Local SEO</li>
+                        <li>Google Ads</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="footer-heading">Contact Us</h5>
+                    <ul class="footer-contact">
+                        <li><i class="bi bi-telephone-fill"></i> +91 80575 56449</li>
+                        <li><i class="bi bi-envelope-fill"></i> rankgrowdigital081@gmail.com</li>
+                        <li><i class="bi bi-geo-alt-fill"></i> Ahmednagar Badhla, Meerut, Uttar Pradesh 250406</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center mt-5">
+                <p>&copy; 2026 Rank Grow <span class="text-orange">Digital</span>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918057556449?text=Hello%20Rank%20Grow%20Digital,%20I%20want%20to%20make%20a%20website%20for%20my%20business.$"
+        class="whatsapp-float" target="_blank" rel="noopener">
+        <i class="bi bi-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            AOS.init({
+                once: true
+            });
+        });
+    </script>
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+
+</html>
